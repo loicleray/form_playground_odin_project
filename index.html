@@ -6,29 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
 
-    <title>Document</title>
+    <title>Odin Project - Sign Up!</title>
   </head>
   <body>
-    <div class="parallax">
-      <div class="parallax__layer parallax__layer__0">
-        <img src="cover_imgs/bg1.png" />
+    <header>
+      <img class="logo" src="imgs/odin-lined.png" alt="odin_logo" />
+      <nav>
+        <ul class="nav_links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#"><button>Contact Us</button></a>
+    </header>
+    <section class="container">
+      <div class="grid-item grid1">
+        <div class="logo_div">
+          <img src="imgs/odin-lined.png" alt="odin logo" />
+          <p>ODIN</p>
+        </div>
+        <div class="photo_credit">
+          <p>
+            Photo by <a href="https://unsplash.com/@loicleray">Loic Leray</a>
+          </p>
+        </div>
       </div>
-      <div class="parallax__layer parallax__layer__1">
-        <img src="cover_imgs/girl1.png" />
+
+      <div class="grid-item grid2">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+        </p>
+        <p>Sign up <em>now</em> to get started.</p>
+
+        <form action="/formurl" action="post">
+          <div class="form_format">
+            <h2>Let's do this!</h2>
+            
+          <div class="input_group"><label for="first_name">First Name</label>
+          <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            placeholder="John"
+            required
+          /></div>
+
+          <div class="input_group"><label for="last_name">Last Name</label>
+          <input
+            type="text"
+            name="last_name"
+            id="last_name"
+            placeholder="Smith"
+            required
+          /></div>
+
+          <div class="input_group"><label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="johnsmith@example.com"
+            required
+          /></div>
+
+          <div class="input_group"><label for="phone_number">Phone Number</label>
+          <input
+            type="tel"
+            name="phone_number"
+            id="phone_number"
+            placeholder="555-555-5555"
+            required
+          /></div>
+
+          <div class="input_group"><label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="********"
+            required
+          /></div>
+
+          <div class="input_group"><label for="password_confirm">Confirm Password</label>
+            <input
+              type="password_confirm"
+              name="password_confirm"
+              id="password_confirm"
+              placeholder="********"
+              required
+            /></div>
+          </div>
+          <div class="input_group button_item">
+            <button type="submit">Create Account</button>
+          </div>
+        </form>
+
+        <p>Already have an account? <a href="#">Log in</a></p>
       </div>
-      <div class="parallax__layer parallax__layer__2">
-        <img src="cover_imgs/rock1.png" />
-      </div>
-      <div class="parallax__cover">
-        <h1>Parallax Test</h1>
-      </div>
-    </div>
-    <div class="end_page">
-      <p>
-        This is a normal part of the test
-        <em class="em1">and this is an emphasis</em>. Which if you ask me,
-        <em class="em2">is pretty bloody cool</em>.
-      </p>
+    </section>
     </div>
   </body>
 </html>
